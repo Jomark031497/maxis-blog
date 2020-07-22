@@ -8,7 +8,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
@@ -19,5 +19,10 @@
     "mongoose": "^5.9.25",
     "morgan": "^1.10.0"
   },
-  "engines": {"node": "12.18.1"}
+  "engines": {
+    "node": "12.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
 }
