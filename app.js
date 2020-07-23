@@ -15,7 +15,7 @@ mongoose
   .then((res) => {
     console.log("connected to mongoDB");
     // listen for requests
-    app.listen(3000);
+    app.listen(process.env.PORT || 3000);
   })
   .catch((err) => {
     console.log(err);
@@ -30,7 +30,7 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 
 //blog routes
-app.use('/blogs',blogRoutes);
+app.use("/blogs", blogRoutes);
 
 //Route handlers
 app.get("/", (req, res) => {
